@@ -1,5 +1,5 @@
-
-var movieThis = require('./movie-this.js')
+var prompt = require('prompt')
+var movieThis = require('./movie-this.js');
 var twitter = require('twitter');
 var client = require('./keys.js');
 var tweetsApi = 'https://api.twitter.com/1.1/statuses/retweets_of_me.json';
@@ -7,8 +7,8 @@ var tweetsApi = 'https://api.twitter.com/1.1/statuses/retweets_of_me.json';
 function myTweets(){
 	client.getReTweetsOfMe('tweetsApi', function(error, tweets, response){
   if(error) throw error;
-  console.log(tweets);  // The favorites. 
-  console.log(response);  // Raw response object. 
+  console.log(tweets);  
+  console.log(response);  
 });
 };
 
