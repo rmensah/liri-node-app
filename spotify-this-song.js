@@ -22,4 +22,4 @@ spotify.search({ type: 'track', query: ' Want it That Way' }, function(err, data
  
     console.log(spotify.track);
 });
-}
+};

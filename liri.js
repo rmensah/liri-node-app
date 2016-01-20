@@ -1,4 +1,5 @@
-var prompt = require('prompt')
+var prompt = require('prompt');
+var spotifyThisSong = require('./spotify-this-song.js');
 var movieThis = require('./movie-this.js');
 var twitter = require('twitter');
 var client = require('./keys.js');
