@@ -1,4 +1,5 @@
 
+
 var twitter = require('twitter');
 var client = require('./keys.js');
 var tweetsApi = 'https://api.twitter.com/1.1/statuses/retweets_of_me.json';
@@ -9,7 +10,7 @@ function myTweets(){
   console.log(tweets);  // The favorites. 
   console.log(response);  // Raw response object. 
 });
-}
+};
 
 
 
